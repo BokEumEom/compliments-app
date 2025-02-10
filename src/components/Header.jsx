@@ -2,7 +2,7 @@
 
 import { ChevronLeftIcon } from '@heroicons/react/24/solid';
 import { useNavigate } from 'react-router-dom';
-import './Header.module.css';
+import './Header.css';
 
 const Header = ({ title, showBackButton = false }) => {
   const navigate = useNavigate();

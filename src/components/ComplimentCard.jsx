@@ -1,6 +1,6 @@
 // src/components/ComplimentCard.jsx
 
-import './ComplimentCard.module.css';
+import './ComplimentCard.css';
 
 const ComplimentCard = ({ message, animate, characterSrc }) => {
   return (

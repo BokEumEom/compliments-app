@@ -6,7 +6,7 @@ import ComplimentCard from '../components/ComplimentCard';
 import compliments from '../data/compliments';
 import characters from '../data/characters';
 import FloatingButton from '../components/FloatingButton';
-import './Home.module.css';
+import './Home.css';
 
 const Home = () => {
   const [complimentIndex, setComplimentIndex] = useState(0);

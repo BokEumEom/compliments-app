@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Header from '../components/Header';
-import './History.module.css';
+import './History.css';
 
 const History = () => {
   const [history, setHistory] = useState([]);

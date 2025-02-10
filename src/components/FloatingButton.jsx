@@ -9,7 +9,7 @@ import {
   ClockIcon,
   Cog6ToothIcon,
 } from '@heroicons/react/24/solid';
-import './FloatingButton.module.css';
+import './FloatingButton.css';
 
 const FloatingButton = () => {
   const [menuOpen, setMenuOpen] = useState(false);
