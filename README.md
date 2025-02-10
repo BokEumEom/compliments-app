@@ -1,8 +1,67 @@
-# React + Vite
+# Random Compliment App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **긍정의 에너지, 한 번의 클릭으로!**  
+> 매일 다양한 칭찬 메시지와 캐릭터 이미지로 하루를 활기차게 시작해 보세요.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 1. 앱 소개
+
+**Random Compliment App**은 사용자가 "칭찬 받기" 버튼을 클릭할 때마다  
+따뜻하고 유쾌한 칭찬 메시지와 함께 다양한 캐릭터 이미지가 순차적으로 변경되는 앱입니다.  
+애니메이션 효과로 부드럽게 전환되어, 사용자에게 자연스럽고 즐거운 경험을 제공합니다.
+
+주요 목적은 다음과 같습니다:
+- **자존감 및 긍정 에너지 제공:** 매일 다른 칭찬 메시지로 기분 전환을 도와줍니다.
+- **간단한 사용성:** 직관적인 인터페이스와 플로팅 버튼을 통한 네비게이션으로 쉽게 접근할 수 있습니다.
+- **데이터 관리:** 즐겨찾기, 기록, 설정 등 사용자의 데이터를 로컬 스토리지에 저장하여 재접속 시에도 유지됩니다.
+
+---
+
+## 2. 주요 기능
+
+- **홈(Home) 화면**
+  - **랜덤 칭찬 받기:** 버튼 클릭 시 칭찬 메시지와 캐릭터 이미지가 순차적으로 변경됩니다.
+  - **애니메이션 효과:** 캐릭터 이미지 변경 시 부드러운 Fade 효과가 적용되어 자연스러운 전환을 제공합니다.
+
+- **즐겨찾기(Favorites)**
+  - 마음에 드는 칭찬 메시지를 저장하여 언제든 다시 볼 수 있습니다.
+  - 개별 삭제 및 전체 삭제 기능을 지원합니다.
+
+- **기록(History)**
+  - 사용자가 받은 칭찬 메시지와 수신 시각을 기록하여 저장합니다.
+  - 기록 확인 및 삭제 기능을 제공합니다.
+
+- **설정(Settings)**
+  - 다크 모드, 알림 활성화, 언어 설정 등 사용자가 앱의 동작을 자유롭게 변경할 수 있습니다.
+  - 설정 값은 로컬 스토리지에 저장되어 앱 재실행 시에도 유지됩니다.
+
+- **플로팅 버튼 네비게이션**
+  - 화면 오른쪽 하단의 플로팅 버튼을 통해 즐겨찾기, 기록, 설정 페이지로 쉽게 이동할 수 있습니다.
+  - 모바일 환경에 최적화된 터치 영역과 디자인을 제공합니다.
+
+---
+
+## 3. 기술 스택
+
+- **프론트엔드**
+  - **React (Vite 기반):** 빠른 빌드 환경과 React Hook을 이용한 효율적인 컴포넌트 관리
+  - **React Router:** 페이지 간 라우팅 (Home, Favorites, History, Settings)
+  - **CSS:** 컴포넌트별 스타일 관리 및 모바일 반응형 디자인
+
+- **데이터 관리**
+  - **로컬 스토리지:** 즐겨찾기, 기록, 설정 등 사용자의 데이터를 영구 저장
+
+- **아이콘 및 폰트**
+  - **@heroicons/react:** 플로팅 버튼 및 헤더에 사용되는 아이콘 제공
+  - **HSYuji-Regular:** 전역 @font-face를 통해 적용된 사용자 지정 폰트
+
+- **버전 관리**
+  - **Git / GitHub:** 소스 코드 버전 관리 및 협업
+
+---
+
+## 기여 및 문의
+
+버그 제보, 기능 개선 아이디어, 기타 문의 사항은 [GitHub Issues](https://github.com/your-repo/random-compliment-app/issues)를 통해 공유해 주세요.  
+기여를 원하시면 [Pull Request](https://github.com/your-repo/random-compliment-app/pulls)를 보내주시기 바랍니다.
