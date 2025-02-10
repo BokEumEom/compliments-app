@@ -1,5 +1,4 @@
-/* src/components/ComplimentCard.css */
-
+/* (1) 기존 스타일 그대로 유지 */
 .compliment-card {
   position: relative;
   max-width: 500px;
@@ -18,7 +17,7 @@
   position: relative;
 }
 
-/* 이미지 크기 증가 (120px -> 150px) */
+/* (2) 캐릭터 이미지 기본 스타일 (기존대로) */
 .character-image {
   width: 350px;
   height: auto;
@@ -30,6 +29,21 @@
   transform: scale(1.05);
 }
 
+/* (3) 캐릭터 이미지에만 적용될 Fade 효과 */
+.character-image.image-fade-in {
+  animation: imageFadeIn 0.8s ease-out forwards;
+}
+
+@keyframes imageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* (4) 기존 speech-bubble 스타일 유지 (애니메이션도 기존대로) */
 .speech-bubble {
   position: relative;
   background: linear-gradient(135deg, #ffeb99, #ffe680);
@@ -39,11 +53,9 @@
   font-size: 16px;
   color: #333;
   opacity: 0;
-  /* 애니메이션 적용: 0.6초 동안 ease-out 효과 */
-  animation: fadeInBubble 0.9s ease-out forwards;
+  animation: fadeInBubble 0.9s ease-out forwards; /* 기존 애니메이션 유지 */
 }
 
-/* 말풍선 애니메이션 */
 @keyframes fadeInBubble {
   from {
     opacity: 0;
@@ -53,18 +65,19 @@
   }
 }
 
-/* 말풍선 꼬리 - border 사용 없이 clip-path로 구현 */
+/* 말풍선 꼬리 (clip-path) */
 .speech-bubble:after {
   content: "";
   position: absolute;
   top: 20px;
-  left: -10px; /* 꼬리 위치 조정 */
+  left: -10px;
   width: 20px;
   height: 20px;
   background: linear-gradient(135deg, #ffeb99, #ffe680);
   clip-path: polygon(100% 0, 0 50%, 100% 100%);
 }
 
+/* 반응형 처리 (기존) */
 @media (max-width: 600px) {
   .character-container {
     flex-direction: column;

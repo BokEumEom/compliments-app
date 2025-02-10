@@ -1,12 +1,16 @@
 /* src/pages/Home.css */
 
 .home-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* Header 높이(70px)를 고려하여 상단 여백을 지정 */
+  padding-top: 70px;
   padding: 20px;
-  /* 플로팅 버튼과 겹치지 않도록 하단 여백 추가 */
-  margin-bottom: 80px;
+  text-align: center;
+  font-family: 'HSYuji-Regular', sans-serif;
+  position: relative;
+}
+
+.home-content {
+  margin-bottom: 80px; /* FloatingButton과 겹치지 않도록 */
 }
 
 .get-compliment-button {
