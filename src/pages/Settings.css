@@ -2,4 +2,29 @@
 
 .settings-page {
   padding: 20px;
+  padding-top: 70px; /* 헤더 높이에 맞춰 상단 여백 수정 */
+  text-align: center;
+  font-family: 'HSYuji-Regular', sans-serif;
+}
+
+.settings-content {
+  margin-top: 20px;
+}
+
+.setting-item {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.setting-item input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.setting-item select {
+  margin-left: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }

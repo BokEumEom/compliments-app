@@ -2,4 +2,55 @@
 
 .favorites-page {
   padding: 20px;
+  padding-top: 70px; /* 헤더 높이에 맞춰 상단 여백 수정 */
+  text-align: center;
+  font-family: 'HSYuji-Regular', sans-serif;
+}
+
+.favorites-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.favorite-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+}
+
+.favorite-message {
+  font-size: 16px;
+  color: #333;
+}
+
+.remove-favorite {
+  background-color: transparent;
+  border: none;
+  color: #ff0000;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.remove-favorite:hover {
+  color: #d40000;
+}
+
+.clear-favorites-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear-favorites-button:hover {
+  background-color: #ffdb4d;
 }
