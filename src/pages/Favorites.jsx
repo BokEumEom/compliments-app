@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Header from '../components/Header';
-import './Favorites.css';
+import './Favorites.module.css';
 
 const Favorites = () => {
   const [favorites, setFavorites] = useState([]);

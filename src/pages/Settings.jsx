@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Header from '../components/Header';
-import './Settings.css';
+import './Settings.module.css';
 
 const Settings = () => {
   const [darkMode, setDarkMode] = useState(false);
