@@ -1,0 +1,84 @@
+/* src/components/ComplimentCard.css */
+
+.compliment-card {
+  position: relative;
+  max-width: 500px;
+  padding: 20px;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.compliment-card:hover {
+  transform: translateY(-5px);
+}
+
+.character-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* 이미지 크기 증가 (120px -> 150px) */
+.character-image {
+  width: 350px;
+  height: auto;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.character-image:hover {
+  transform: scale(1.05);
+}
+
+.speech-bubble {
+  position: relative;
+  background: linear-gradient(135deg, #ffeb99, #ffe680);
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 300px;
+  font-size: 16px;
+  color: #333;
+  opacity: 0;
+  animation: fadeInBubble 0.5s forwards;
+}
+
+/* 말풍선 애니메이션 */
+@keyframes fadeInBubble {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 말풍선 꼬리 - border 사용 없이 clip-path로 구현 */
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -10px; /* 꼬리 위치 조정 */
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #ffeb99, #ffe680);
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+@media (max-width: 600px) {
+  .character-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .character-image {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .speech-bubble:after {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+}

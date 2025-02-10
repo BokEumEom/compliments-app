@@ -1,0 +1,25 @@
+/* src/index.css */
+
+@font-face {
+  font-family: 'HSYuji-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: 'HSYuji-Regular', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}

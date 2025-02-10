@@ -1,0 +1,26 @@
+/* src/pages/Home.css */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  /* 플로팅 버튼과 겹치지 않도록 하단 여백 추가 */
+  margin-bottom: 80px;
+}
+
+.get-compliment-button {
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'HSYuji-Regular', sans-serif;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.get-compliment-button:hover {
+  background-color: #ffdb4d;
+}
