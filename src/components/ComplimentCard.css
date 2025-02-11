@@ -29,17 +29,18 @@
   transform: scale(1.05);
 }
 
-/* (3) 캐릭터 이미지에만 적용될 Fade 효과 */
+/* 기존 fade-in 효과 대신, clip-path 모핑 효과 적용 */
 .character-image.image-fade-in {
-  animation: imageFadeIn 0.8s ease-out forwards;
+  /* 기존의 opacity 기반 애니메이션 대신 clip-path 애니메이션만 적용 */
+  animation: imageMorph 2s ease-out forwards;
 }
 
-@keyframes imageFadeIn {
+@keyframes imageMorph {
   from {
-    opacity: 0;
+    clip-path: circle(0% at 50% 50%);
   }
   to {
-    opacity: 1;
+    clip-path: circle(150% at 50% 50%);
   }
 }
 
