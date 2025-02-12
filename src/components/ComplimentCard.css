@@ -2,8 +2,9 @@
 .compliment-card {
   position: relative;
   max-width: 500px;
-  padding: 20px;
-  margin: 20px;
+  margin:0 auto;
+  /* padding: 20px; */
+  /* margin: 20px; */
   transition: transform 0.3s ease;
 }
 
@@ -19,8 +20,9 @@
 
 /* (2) 캐릭터 이미지 기본 스타일 (기존대로) */
 .character-image {
-  width: 350px;
+  width: 100%;
   height: auto;
+  margin-top:-90px;
   margin-right: 20px;
   transition: transform 0.3s ease;
 }
@@ -46,7 +48,8 @@
 
 /* (4) 기존 speech-bubble 스타일 유지 (애니메이션도 기존대로) */
 .speech-bubble {
-  position: relative;
+  position: absolute;
+  right:-160px;
   background: linear-gradient(135deg, #ffeb99, #ffe680);
   border-radius: 10px;
   padding: 15px;
@@ -88,10 +91,16 @@
     margin-right: 0;
     margin-bottom: 10px;
   }
+  .speech-bubble {
+    position:relative;
+    right:0;
+    margin-top:24px;
+  }
   .speech-bubble:after {
-    left: 50%;
+    left: calc(50% - 8px);
     transform: translateX(-50%);
-    top: -10px;
+    rotate:59deg;
+    top: 2px;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
   }
 }

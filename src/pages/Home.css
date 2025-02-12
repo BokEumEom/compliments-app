@@ -3,7 +3,7 @@
 .home-page {
   /* Header 높이(70px)를 고려하여 상단 여백을 지정 */
   padding-top: 70px;
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
   font-family: 'HSYuji-Regular', sans-serif;
   position: relative;
